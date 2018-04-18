@@ -24,27 +24,26 @@ const IndexPage = ({
             <Form.wrapper>
               <Form.label>E-mail address</Form.label>
               <Form.input
+                type="text"
                 value={email}
                 placeholder="example@hotmail.com"
                 onChange={onEmailChange}
               ></Form.input>
             </Form.wrapper>
-
-
-              <Form.wrapper>
-                <Form.label>Password</Form.label>
-                <Form.input
-                  type="password"
-                  value={password}
-                  placeholder="your password..."
-                  onChange={onPasswordChange}
-                ></Form.input>
-              </Form.wrapper>
-              {
-                errorMessage ?
-                <ErrorMsg>{errorMessage}</ErrorMsg>
-                : null
-              }
+            <Form.wrapper>
+              <Form.label>Password</Form.label>
+              <Form.input
+                type="password"
+                value={password}
+                placeholder="your password..."
+                onChange={onPasswordChange}
+              ></Form.input>
+            </Form.wrapper>
+            {
+              errorMessage ?
+              <ErrorMsg>{errorMessage}</ErrorMsg>
+              : null
+            }
             <ButtonWrapper>
               <Button
                 type="submit"
@@ -128,10 +127,12 @@ const Row = styled.div`
   justify-content: space-between;
   margin-top: auto;
 `
-const ActionLabel = styled.div`
+const ActionLabel = styled.a`
   color: ${color.primary};
-  text-decoration: underline;
-  cursor: pointer;
+  :hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 
 `
 
