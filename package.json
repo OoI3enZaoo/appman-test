@@ -5,13 +5,14 @@
     "client": "next",
     "build": "next build",
     "start": "next start",
-    "server": "node server.js",
+    "server": "node api/server.js",
     "test": "jest --watchAll"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "babel-jest": "^22.4.3",
     "body-parser": "^1.18.2",
+    "color": "^3.0.0",
     "cors": "^2.8.4",
     "enzyme-adapter-react-16": "^1.1.1",
     "express": "^4.16.3",

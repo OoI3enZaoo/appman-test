@@ -136,6 +136,9 @@ const ActionLabel = styled.div`
 `
 const FormWrapper = styled.div`
   margin: 30px 0px;
+  .form-title {
+    font-size: 20px;
+  }
 `
 const ButtonWrapper = styled.div`
   display:flex;
@@ -143,11 +146,12 @@ const ButtonWrapper = styled.div`
   margin: 30px 0px;
 `
 const LoginBox = styled.div`
-  border-radius: 1rem;
+  border-radius: 5px;
   min-width: 600px;
   padding: 20px;
+  border: 1px solid ${color.borderLogin};
   background-color: white;
-  box-shadow: 0 70px 40px -40px rgba(0,0,0,0.5);
+  box-shadow: 4px 6px 22px -5px rgba(0,0,0,0.5);
   display: flex;
   flex-direction: column;
 `

@@ -10,8 +10,11 @@ const Button = styled.button`
   cursor: pointer;
   background-color: ${color.primary};
   color: white;
-  padding: 19px 56px;
+  padding: 13px 52px;
     font-size: 22px;
   border: 0;
   border-radius: 5px;
+  :hover {
+    background-color: ${color.buttonHover};
+  }
 `
