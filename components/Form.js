@@ -10,7 +10,14 @@ Form.row = styled.div`
     margin-bottom: 0;
   }
 `
-
+Form.wrapper = styled.div`
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  .form-title {
+    font-size: 20px;
+  }
+`
 Form.label = styled.label`
   display: block;
   margin-bottom: 0.2em;

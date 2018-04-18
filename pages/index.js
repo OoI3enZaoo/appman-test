@@ -21,25 +21,25 @@ const IndexPage = ({
             <Logo isLoading={isLoading}/>
           </LogoWrapper>
           <Form onSubmit={onSigninHandle}>
-            <FormWrapper>
-              <label className='form-title' htmlFor=''>E-mail address</label>
+            <Form.wrapper>
+              <Form.label>E-mail address</Form.label>
               <Form.input
                 value={email}
                 placeholder="example@hotmail.com"
                 onChange={onEmailChange}
               ></Form.input>
-            </FormWrapper>
+            </Form.wrapper>
 
 
-              <FormWrapper>
-                <label className='form-title' htmlFor=''>Password</label>
+              <Form.wrapper>
+                <Form.label>Password</Form.label>
                 <Form.input
                   type="password"
                   value={password}
                   placeholder="your password..."
                   onChange={onPasswordChange}
                 ></Form.input>
-              </FormWrapper>
+              </Form.wrapper>
               {
                 errorMessage ?
                 <ErrorMsg>{errorMessage}</ErrorMsg>
@@ -134,14 +134,7 @@ const ActionLabel = styled.div`
   cursor: pointer;
 
 `
-const FormWrapper = styled.div`
-  margin: 30px 0px;
-  display: flex;
-  flex-direction: column;
-  .form-title {
-    font-size: 20px;
-  }
-`
+
 const ButtonWrapper = styled.div`
   display:flex;
   justify-content: center;
