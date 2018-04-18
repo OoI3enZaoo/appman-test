@@ -19,9 +19,7 @@ Form.label = styled.label`
 `
 
 Form.input = styled.input`
-  display: block;
-  width: 100%;
-  padding: 5px 0px;
+  padding: 6px 16px;
   border: 1px solid ${color.borderGray};
   border-radius: 1rem;
   outline: none;

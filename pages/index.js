@@ -136,6 +136,8 @@ const ActionLabel = styled.div`
 `
 const FormWrapper = styled.div`
   margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
   .form-title {
     font-size: 20px;
   }
