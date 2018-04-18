@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styled from 'styled-components'
 import { color } from '<config>'
 import { Button, Logo, Form } from '<components>'
-import { compose, withState, withHandlers,lifecycle } from 'recompose'
+import { compose, withState, withHandlers } from 'recompose'
 
 import axios from 'axios'
 const IndexPage = ({
@@ -95,11 +95,6 @@ export default compose(
         setErrorMessage('E-mail or password is incorrect')
       })
     },
-  }),
-  lifecycle({
-    componentWillMount() {
-      console.log('ReduxData', this.props.dataWorks)
-    }
   })
 )(IndexPage)
 
