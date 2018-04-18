@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import { color } from '<config>'
 import { Button, Logo, Form } from '<components>'
 import { compose, withState, withHandlers } from 'recompose'
-
 import axios from 'axios'
+
 const IndexPage = ({
   email,
   password,
@@ -41,8 +41,8 @@ const IndexPage = ({
             </Form.wrapper>
             {
               errorMessage ?
-              <ErrorMsg>{errorMessage}</ErrorMsg>
-              : null
+                <ErrorMsg>{errorMessage}</ErrorMsg>
+                : null
             }
             <ButtonWrapper>
               <Button
@@ -92,7 +92,6 @@ export default compose(
       })
       .catch(error => {
         setIsloading(false)
-        console.log('error', error)
         setErrorMessage('E-mail or password is incorrect')
       })
     },

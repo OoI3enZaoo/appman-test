@@ -1,17 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../public/images/logo.svg'
+import logo from '<images>/logo.svg'
 const Logo = ({
   isLoading,
-}) => {
-  return <Img
+}) => (
+  <Img
     isLoading={isLoading}
     className='logo-spin'
     src={logo}
   />
-}
+)
 export default Logo
-
 
 const Img = styled.img`
   width: 180px;
@@ -25,4 +24,3 @@ const Img = styled.img`
       }
   }
 `
-//sdsdsd
