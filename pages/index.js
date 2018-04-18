@@ -73,10 +73,12 @@ export default compose(
     onPasswordChange: ({setPassword}) => e => {
       setPassword(e.target.value)
     },
-    onSigninHandle: ({ email, password, setErrorMessage, setIsloading }) => e => {
+    onSigninHandle: ({ email, password, setEmail, setPassword, setErrorMessage, setIsloading }) => e => {
       e.preventDefault()
       setIsloading(true)
       const payload = { email, password }
+      setEmail('')
+      setPassword('')
       axios.post('http://localhost:4000/api/login', payload)
       .then (resp => {
         setIsloading(false)
